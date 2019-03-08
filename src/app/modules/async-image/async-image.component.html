@@ -1,0 +1,12 @@
+<div class="aysnc-image">
+  <div class="d-flex justify-content-center aysnc-image__loader" *ngIf="!isLoaded">
+    <div class="spinner-border text-secondary mb-3" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <div class="image" [@fadeOut]="isLoaded ? 'final': 'inital'">
+    <div class="image__holder mb-1">
+      <img class="img-fluid w-100" alt="cats" [hidden]="!isLoaded" #imageRef>
+    </div>
+  </div>
+</div>

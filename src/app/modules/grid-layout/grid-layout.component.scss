@@ -1,0 +1,18 @@
+.grid {
+  background: #eaeaea !important;
+  .photos {
+    &__column {
+      display: block;
+      flex-basis: 0;
+    }
+  }
+  &__actions {
+    padding: 1em 0em 1em 0em;
+  }
+}
+
+.images {
+  width: 1200px;
+  max-width: 100%;
+  max-height: 100%;
+}
